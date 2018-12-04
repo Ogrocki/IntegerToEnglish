@@ -24,3 +24,7 @@ I have a included a the Jar and a bash file to run the code. You can call:
  - lib - libraries used by this program, we use icu4j-63_1.jar and junit-4.13-beta-1.jar.
  - src.com.ogrocki.matthew.IntegerToEnglishConverter - Holds the logic for converting IntegerToEnglish.
  - Main.java - Holds CLI user interface and logic for looping values.
+ 
+# Tools Used
+ - icu4j-63_1.jar - Used to convert Integer to English http://site.icu-project.org/home - ICU license
+ - junit-4.13-beta-1.jar - Used for basic unit tests https://junit.org/junit5/ - Eclipse Public License 
