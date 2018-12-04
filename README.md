@@ -28,3 +28,11 @@ I have a included a the Jar and a bash file to run the code. You can call:
 # Tools Used
  - icu4j-63_1.jar - Used to convert Integer to English http://site.icu-project.org/home - ICU license
  - junit-4.13-beta-1.jar - Used for basic unit tests https://junit.org/junit5/ - Eclipse Public License 
+ 
+# Explination 
+ - in this solution I chose to use a libary that does the required work already that is open source instead of
+   redoing work that has already been done. I created a class for testing purposes and a few basic unit tests.
+   If this solution is not an acceptatble solution I can just replace the library call for icu4 with code that
+   accomplishes the task without having to modify any of the other code. I wrote a .sh file so it can clear the
+   screen when being used on the command line. Finally I used Junit as a testing frame work so I could do test
+   driven development. 
