@@ -2,12 +2,14 @@ package com.ogrocki.matthew;
 
 import com.ibm.icu.text.RuleBasedNumberFormat;
 
+import java.util.Locale;
+
 public class IntegerToEnglishConverter {
 
     private final RuleBasedNumberFormat ruleBasedNumberFormat;
 
-    public IntegerToEnglishConverter(RuleBasedNumberFormat ruleBasedNumberFormat) {
-        this.ruleBasedNumberFormat = ruleBasedNumberFormat;
+    public IntegerToEnglishConverter() {
+        this.ruleBasedNumberFormat = new RuleBasedNumberFormat(Locale.CANADA, RuleBasedNumberFormat.SPELLOUT);;
     }
 
     public String convert(String number) throws NumberFormatException {

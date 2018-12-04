@@ -1,8 +1,5 @@
 package com.ogrocki.matthew;
 
-import com.ibm.icu.text.RuleBasedNumberFormat;
-
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +10,8 @@ public class Main {
 
     private static void runUserInterface() {
         Scanner scanner = new Scanner(System.in);
-        RuleBasedNumberFormat nf = new RuleBasedNumberFormat(Locale.CANADA, RuleBasedNumberFormat.SPELLOUT);
-        IntegerToEnglishConverter integerToEnglishConverter = new IntegerToEnglishConverter(nf);
+
+        IntegerToEnglishConverter integerToEnglishConverter = new IntegerToEnglishConverter();
 
         System.out.println("Welcome to the Integer-To-English-Convertenator input a number between -2,147,483,647 and 2,147,483,647.");
         System.out.println("Enter \"quit\" to exit");
